@@ -1,0 +1,15 @@
+C:\Users\Havoc\ConsoleTetrisApp\bin\Debug\net8.0\ConsoleTetrisApp.exe
+C:\Users\Havoc\ConsoleTetrisApp\bin\Debug\net8.0\ConsoleTetrisApp.deps.json
+C:\Users\Havoc\ConsoleTetrisApp\bin\Debug\net8.0\ConsoleTetrisApp.runtimeconfig.json
+C:\Users\Havoc\ConsoleTetrisApp\bin\Debug\net8.0\ConsoleTetrisApp.dll
+C:\Users\Havoc\ConsoleTetrisApp\bin\Debug\net8.0\ConsoleTetrisApp.pdb
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.AssemblyInfoInputs.cache
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.AssemblyInfo.cs
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.csproj.CoreCompileInputs.cache
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.sourcelink.json
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.dll
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\refint\ConsoleTetrisApp.dll
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.pdb
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ConsoleTetrisApp.genruntimeconfig.cache
+C:\Users\Havoc\ConsoleTetrisApp\obj\Debug\net8.0\ref\ConsoleTetrisApp.dll
