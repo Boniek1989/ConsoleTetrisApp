@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Havoc\\ConsoleTetrisApp\\ConsoleTetrisApp.csproj",
+      "projectUniqueName": "C:\\Users\\Havoc\\ConsoleTetrisApp-1\\ConsoleTetrisApp.csproj",
       "projectName": "ConsoleTetrisApp",
-      "projectPath": "C:\\Users\\Havoc\\ConsoleTetrisApp\\ConsoleTetrisApp.csproj",
+      "projectPath": "C:\\Users\\Havoc\\ConsoleTetrisApp-1\\ConsoleTetrisApp.csproj",
       "packagesPath": "C:\\Users\\Havoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Havoc\\ConsoleTetrisApp\\obj\\",
+      "outputPath": "C:\\Users\\Havoc\\ConsoleTetrisApp-1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

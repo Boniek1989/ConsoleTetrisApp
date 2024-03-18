@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6DthQHmEJH1Wee1fceqJoquEFSSuIGmdV+kx8j/Pn3mgII9agCYaWvRYxD0v75mbk2Av9a8Hk8IeFuTECVT22w==",
+  "dgSpecHash": "xA0hkKCQ6vWjgHokS/23YH9JIxsNEaYKdaoTAnQyUNIZHSApvKqaR1jGpUeLDaJIQBZOPauWgjlca8EuRWxT6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Havoc\\ConsoleTetrisApp\\ConsoleTetrisApp.csproj",
+  "projectFilePath": "C:\\Users\\Havoc\\ConsoleTetrisApp-1\\ConsoleTetrisApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
