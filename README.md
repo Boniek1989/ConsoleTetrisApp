@@ -16,3 +16,8 @@ I've invented connection between drawing bricks on console and two dimension arr
 1) Default array value is set to 0,
 2) If brick reach bottom, drew element value is changing to 1,
 3) If brick reach another brick (is colliding) value is changing to 1 and loop breaks, 
+
+18.03.2024
+1) Created new branch for rotator issue,
+2) Changed updating string method from WriteAt " " to Console.Clear - in case to stop artifacts on screen.
+3) New files for old classes in case to better code maintenance.
