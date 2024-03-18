@@ -1,7 +1,7 @@
     
     public class Layer : Writer
     {
-    
+        
     int i;
     int j;
     
@@ -10,6 +10,7 @@
     
 
     {
+        
             
         Console.Clear();
         
@@ -74,6 +75,8 @@
         //        WriteAt("[[|]]", layerVal * 5, 19);
         //    }
         
+        
+
     }
     
 

@@ -8,6 +8,7 @@ public class Program
 {
     static void Main()
     {
+        
         Layer instanceLayer = new Layer();
         Movers brickOne = new Movers();
 
@@ -26,9 +27,9 @@ public class Program
                     case ConsoleKey.RightArrow:
                         brickOne.MoveBrickRight();
                         break;
-                    //case ConsoleKey.Enter:
-                    //    brickOne.rotateBrick();
-                    //    break;    
+                    case ConsoleKey.Enter:
+                        brickOne.rotateBrick();
+                        break;    
                     case ConsoleKey.Escape:
                         Environment.Exit(0); 
                         break;
@@ -37,18 +38,18 @@ public class Program
         });
 
         inputThread.Start();
-
-        
-        
         brickOne.gameMatrix();
-        instanceLayer.drawLayer();
+
         brickOne.gameMatrixShow();
+       
+        instanceLayer.drawLayer();
+      
         while(1<10)
         { 
         
-            brickOne.drawBoard();
+            
             brickOne.brickMove(18);
-            brickOne.drawBoard();
+            
         }   
         
     } 

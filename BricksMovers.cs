@@ -1,21 +1,29 @@
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 
 public class Movers : Bricks
 {
     public int [,] gameTable = new int [20,30];
     public int x;
     public int y;
+    public int rotator=1;
+
+
     public void brickMove(int startingJ)
    
     
-    {
+    {   
+        Bricks brickOne = new Bricks();
         Layer updater = new Layer(); 
         j=startingJ;
         
         for(i=0;i<19;i++)
         {
+            
+
         int x=j-5;
         int y=i; 
+       
         if(gameTable[y+1,x]==1||gameTable[y+1,x+1]==1||gameTable[y+1,x+2]==1||gameTable[y+1,x+3]==1)
         {
             WriteAt("X",j,i);   
@@ -45,14 +53,16 @@ public class Movers : Bricks
                     gameTable[y,x+3]=1;
                     gameTable[y,x+4]=1;  
         }
-        drawBoard();
+        
         longBrick();
-        System.Threading.Thread.Sleep(100);
+        gameMatrixShow();
+        drawBoard();
+        System.Threading.Thread.Sleep(300);
         Console.Clear();
           
         updater.drawLayer();
-        drawBoard();     
-        gameMatrixShow();  
+             
+         
     }
            
         
@@ -72,6 +82,14 @@ public class Movers : Bricks
             j++;
         }
     }
+    public void rotateBrick()
+    {
+        if (j>5 && j<30)
+        {
+            rotator++;
+        }
+    }
+      
     public void gameMatrix()
     {
         for(int x=0;x<20;x++)
@@ -81,13 +99,7 @@ public class Movers : Bricks
                 gameTable[x,y]=0;
             }
         }
-        
-        {
-            for(int y=0;y<30;y++)
-            {
-                gameTable[19,y]=1;
-            }
-        } 
+          
     }
     public void gameMatrixShow()
     {
@@ -104,17 +116,23 @@ public class Movers : Bricks
     }   
     public void drawBoard()
     {
-      
+      Console.CursorTop=0;
+      Console.CursorLeft=0;
         for(int x=0;x<20;x++)
         {
             for(int y=0;y<30;y++)
             {
                 if (gameTable[x,y]==1)
                 {
-                    WriteAt("X",j+5,i);
+                    WriteAt("X",y+5,x);
                 }
             }
         }
     }
-
+    public void updateBrickPosition(int newX, int newY)
+    {
+        x = newX;
+        y = newY;
+    }
 }
+
