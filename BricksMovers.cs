@@ -8,6 +8,7 @@ public class Movers : Bricks
     public int y;
     public int rotator=1;
 
+    
 
     public void brickMove(int startingJ)
    
@@ -24,43 +25,81 @@ public class Movers : Bricks
         int x=j-5;
         int y=i; 
        
-        if(gameTable[y+1,x]==1||gameTable[y+1,x+1]==1||gameTable[y+1,x+2]==1||gameTable[y+1,x+3]==1)
-        {
-            WriteAt("X",j,i);   
-            WriteAt("X",j+1,i); 
-            WriteAt("X",j+2,i);   
-            WriteAt("X",j+3,i);
-            WriteAt("X",j+4,i);
-
-            gameTable[y,x]=1;
-            gameTable[y,x+1]=1;
-            gameTable[y,x+2]=1;
-            gameTable[y,x+3]=1;
-            gameTable[y,x+4]=1;
-            break;
-        }
-        if(i==18)
-        {
-                    WriteAt("X",j,i);   
-                    WriteAt("X",j+1,i); 
-                    WriteAt("X",j+2,i);   
-                    WriteAt("X",j+3,i);
-                    WriteAt("X",j+4,i);
-
-                    gameTable[y,x]=1;
-                    gameTable[y,x+1]=1;
-                    gameTable[y,x+2]=1;
-                    gameTable[y,x+3]=1;
-                    gameTable[y,x+4]=1;  
-        }
         
+        if(rotator%2>0)
+        {
+            if(gameTable[y+1,x]==1||gameTable[y+1,x+1]==1||gameTable[y+1,x+2]==1||gameTable[y+1,x+3]==1)
+            {
+                WriteAt("X",j,i);   
+                WriteAt("X",j+1,i); 
+                WriteAt("X",j+2,i);   
+                WriteAt("X",j+3,i);
+                WriteAt("X",j+4,i);
+
+                gameTable[y,x]=1;
+                gameTable[y,x+1]=1;
+                gameTable[y,x+2]=1;
+                gameTable[y,x+3]=1;
+                gameTable[y,x+4]=1;
+
+                break;
+            }
+            if(i==18)
+            {
+                WriteAt("X",j,i);   
+                WriteAt("X",j+1,i); 
+                WriteAt("X",j+2,i);   
+                WriteAt("X",j+3,i);
+                WriteAt("X",j+4,i);
+
+                gameTable[y,x]=1;
+                gameTable[y,x+1]=1;
+                gameTable[y,x+2]=1;
+                gameTable[y,x+3]=1;
+                gameTable[y,x+4]=1;  
+        }    
         longBrick();
+        }
+        if (rotator%2==0)
+        {
+            if(gameTable[y+3,x]==1)
+            {
+                WriteAt("X", j+2, i+2);  
+                WriteAt("X", j+2, i+1);  
+                WriteAt("X", j+2, i);  
+                WriteAt("X", j+2, i-1); 
+                WriteAt("X", j+2, i-2);
+
+                gameTable[y-2,x+2]=1;
+                gameTable[y-1,x+2]=1;
+                gameTable[y,x+2]=1;
+                gameTable[y+1,x+2]=1;
+                gameTable[y+2,x+2]=1;
+
+                break;
+            }
+            if(i+2==18)
+            {
+                WriteAt("X", j+2, i+2);  
+                WriteAt("X", j+2, i+1);  
+                WriteAt("X", j+2, i);  
+                WriteAt("X", j+2, i-1); 
+                WriteAt("X", j+2, i-2);
+
+                gameTable[y-2,x+2]=1;
+                gameTable[y-1,x+2]=1;
+                gameTable[y,x+2]=1;
+                gameTable[y+1,x+2]=1;
+                gameTable[y+2,x+2]=1; 
+                break;
+            }
+            rotatedLongBrick();
+        }
         gameMatrixShow();
-        drawBoard();
-        System.Threading.Thread.Sleep(300);
-        Console.Clear();
-          
-        updater.drawLayer();
+            drawBoard();
+                System.Threading.Thread.Sleep(300);
+                    Console.Clear();
+                        updater.drawLayer();
              
          
     }
@@ -69,6 +108,13 @@ public class Movers : Bricks
     }
     public void MoveBrickLeft()
     {
+        if ()
+        {
+
+        }    
+
+
+
         if (j > 5 )
         {
             j--;
@@ -111,13 +157,13 @@ public class Movers : Bricks
                 {
                      Console.Write(gameTable[x, y] + " ");
                 }
-             Console.WriteLine();
+            Console.WriteLine();
         }
     }   
     public void drawBoard()
     {
-      Console.CursorTop=0;
-      Console.CursorLeft=0;
+    Console.CursorTop=0;
+    Console.CursorLeft=0;
         for(int x=0;x<20;x++)
         {
             for(int y=0;y<30;y++)
@@ -128,11 +174,6 @@ public class Movers : Bricks
                 }
             }
         }
-    }
-    public void updateBrickPosition(int newX, int newY)
-    {
-        x = newX;
-        y = newY;
     }
 }
 
