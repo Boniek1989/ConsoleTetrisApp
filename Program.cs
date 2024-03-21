@@ -46,9 +46,9 @@ public class Program
       
         while(1<10)
         { 
-        
+            brickOne.brickMoveThird(18);
             
-            brickOne.brickMove(18);
+            brickOne.brickMoveFourth(18);
             
         }   
         
