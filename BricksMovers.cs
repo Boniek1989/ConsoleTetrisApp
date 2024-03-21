@@ -11,7 +11,6 @@ public class Movers : Bricks
     
     public void brickMoveThird(int startingJ)
     {
-    Bricks brickOne = new Bricks();
     Layer updater = new Layer(); 
     j=startingJ;
         
@@ -29,13 +28,6 @@ public class Movers : Bricks
 
             if(gameTable[y+2,x]==1||gameTable[y+1,x+1]==1||gameTable[y+1,x+2]==1||gameTable[y+1,x+3]==1||gameTable[y+1,x+4]==1)
             {  
-                WriteAt("X",j,i+1);
-                WriteAt("X",j,i);   
-                WriteAt("X",j+1,i); 
-                WriteAt("X",j+2,i);   
-                WriteAt("X",j+3,i);
-                WriteAt("X",j+4,i);
-
                 gameTable[y+1,x]=1;
                 gameTable[y,x]=1;
                 gameTable[y,x+1]=1;
@@ -47,13 +39,6 @@ public class Movers : Bricks
             }
             if(i==17)
             {
-                WriteAt("X",j,i+1);
-                WriteAt("X",j,i);   
-                WriteAt("X",j+1,i); 
-                WriteAt("X",j+2,i);   
-                WriteAt("X",j+3,i);
-                WriteAt("X",j+4,i);
-
                 gameTable[y+1,x]=1;
                 gameTable[y,x]=1;
                 gameTable[y,x+1]=1;
@@ -70,12 +55,6 @@ public class Movers : Bricks
 
             if(gameTable[y+3,x]==1)
             {
-                WriteAt("X", j, i+2);  
-                WriteAt("X", j, i+1);  
-                WriteAt("X", j, i);  
-                WriteAt("X", j, i-1); 
-                WriteAt("X", j, i-2);
-
                 gameTable[y-2,x]=1;
                 gameTable[y-1,x]=1;
                 gameTable[y,x]=1;
@@ -86,13 +65,6 @@ public class Movers : Bricks
             }
             if(i+2==18)
             {   
-                WriteAt("X", j+1, i+2);
-                WriteAt("X", j, i+2);  
-                WriteAt("X", j, i+1);  
-                WriteAt("X", j, i);  
-                WriteAt("X", j, i-1); 
-                WriteAt("X", j, i-2);
-
                 gameTable[y+2,x+1]=1;
                 gameTable[y-2,x]=1;
                 gameTable[y-1,x]=1;
@@ -116,7 +88,6 @@ public class Movers : Bricks
    
     
     {   
-        Bricks brickOne = new Bricks();
         Layer updater = new Layer(); 
         j=startingJ;
         
@@ -203,7 +174,7 @@ public class Movers : Bricks
         }
         gameMatrixShow();
             drawBoard();
-                System.Threading.Thread.Sleep(300);
+                System.Threading.Thread.Sleep(500);
                     Console.Clear();
                         updater.drawLayer();
              
@@ -255,7 +226,7 @@ public class Movers : Bricks
         switch(moveBuffor)
         {   
         case 1:
-            if (j>5 && j<30)
+            if (j>5 && j<30 )
             {
                
                 

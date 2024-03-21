@@ -20,6 +20,9 @@ public class Bricks : Writer
 }
     public void rotatedLBrick()
     {
+        Console.CursorTop = i;
+        Console.CursorLeft = j;
+
                 WriteAt("X", j+1, i+2);
                 WriteAt("X", j, i+2);  
                 WriteAt("X", j, i+1);  
@@ -40,6 +43,8 @@ public class Bricks : Writer
 }
     public void rotatedLongBrick()
     {
+        Console.CursorLeft = j;
+        Console.CursorLeft = j;
         WriteAt("X", j, i-2);  
         WriteAt("X", j, i-1);  
         WriteAt("X", j, i);  
